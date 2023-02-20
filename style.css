@@ -1,0 +1,563 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #00296B;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #00509D;
+}
+
+
+.menu-caixa {
+    position: relative;
+    width: 940px;
+    text-align: center;
+    height: 100px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD500;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #FFD500;
+}
+
+
+.minha-foto {
+    float: left;
+    width: 22%;
+    margin: 100px 50px 0 14%;
+}
+
+.titulo {
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 180px;
+    color: white;
+}
+
+.descricao {
+    font-size: 25px;
+    width: 76%;
+    margin: 50px 0 100px 50px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}  
+
+.Info-btn a {
+    padding: 15px;
+}
+
+.Info-btn input {
+    width: 300px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #FFD500;
+    color: #FFD500;
+    border-radius: 63px;
+    position: relative;
+    right: 17px;
+    transition: 0.3s all;
+}
+
+.Info-btn input:hover {
+    background: #FFD500;
+    color: #00296B;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.meus-estudos {
+    background: url(Imagens/Meus-estudos-bg.png);
+    margin-top: 18em;
+    padding-top: 10em;
+}
+
+.div-meus-estudos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #00296B;
+    text-align: center;
+}
+
+.meus-estudos p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 80px;
+}
+
+.meus-estudos ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 78px;
+    justify-content: center;
+    align-items: center;
+}
+
+.meus-estudos li {
+    padding-inline: 60px;
+    transition: 0.2s ease-in-out;
+}
+
+.meus-estudos li:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.onde-estudo {
+    background: white;
+    padding-top: 10em;
+    height: 730px;
+}
+
+.p-titulo-principal {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    color: #00296B;
+}
+
+.p-titulo-principal span {
+    font-weight: bold;
+    color: #00509D;
+}
+
+.p-titulo-principal a {
+    color: #00509D;
+    text-decoration: none;
+    position: relative;
+}
+
+.p-titulo-principal a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00509D;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.p-titulo-principal a:hover::before {
+    transform: scaleX(1);
+}
+
+.div-onde-estudo {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.meu-perfil-div {
+    margin-top: 5em;
+}
+
+.onde-estudo img {
+    float: left;
+    margin: 0px 55px 0px -10em;
+    border: 3px solid #00509D;
+    border-radius: 5px;
+}
+
+.meu-perfil-titulo {
+    font-size: 65px;
+    width: 100%;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #00296B;
+}
+
+.perfil-desc {
+    font-size: 29px;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 40px;
+    color: #00296B;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.onde-estudo-btn input{
+    padding: 20px;
+    width: 324px;
+    margin-top: 95px;
+    color: #00296B;
+    background: none;
+    border: 3px solid #00296B;
+    border-radius: 20px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.onde-estudo-btn input:hover {
+    cursor: pointer;
+    background: #00296B;
+    color: white;
+    width: 330px;
+}
+
+.meus-projetos {
+    background: url(Imagens/Projetos-bg.png);
+    margin-bottom: 165px;
+}
+
+.div-projetos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-meus-projetos {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+}
+
+.meus-projetos-desc {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 63px;
+    color: white;
+}
+
+.projetos-type {
+    text-align: center;
+}
+
+.projetos-type img {
+    width: 95%;
+    padding-top: 85px;
+}
+
+.projetos-type h2 {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 57px;
+}
+
+.projetos-type p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 39px;
+    color: white;
+}
+
+.projetos-type span {
+    color: #FFD500;
+    font-weight: 600;
+}
+
+.projeto-btn {
+    width: 410px;
+    margin-top: 39px;
+    padding: 20px;
+    color: #FFD500;
+    background: #00296B;
+    border: 1.7px solid #FFD500;
+    border-radius: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projeto-btn:hover {
+    cursor: pointer;
+    background: #FFD500;
+    color: #00296B;
+    width: 330px;
+}
+
+footer {
+    background: #00509D;
+    text-align: center;
+    height: 430px;
+}
+
+footer img {
+    margin-top: 72px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+footer img:hover {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+    transform: scale(1.1);
+}
+
+footer h3 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Responsividade */
+@media screen and (max-width: 480px) {
+    .menu-caixa, #info, .div-meus-estudos, .div-onde-estudo, .div-projetos, .projetos-type, footer {
+        width: auto;
+    }
+
+    #info {
+        height: 300px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .menu-caixa nav {
+        position: relative;
+        left: 0;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    nav li {
+        margin: 0 auto;
+        padding-inline: 10px;
+    }
+
+    .minha-foto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        width: 60%;
+        float: none;
+    }
+
+    .titulo {
+        width: 100%;
+        font-size: 40px;
+        margin-top: 32px;
+    }
+
+    .descricao {
+        width: 84%;
+        margin: auto;
+        padding-top: 35px;
+        font-size: 20px;
+    }
+
+    .Info-btn {
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .Info-btn a{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 auto;
+    }
+    
+    .Info-btn input{
+        margin-left: 34px;
+        background: #FFD500;
+        color: #00296B;
+    }
+
+    .meus-estudos {
+        background: url(Imagens/Meus-estudos-responsive-bg.png);
+        padding-top: 8em;
+    }
+
+    .titulo-principal {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .meus-estudos p {
+        width: 100%;
+        font-size: 25px;
+        padding-top: 45px;
+    }
+
+    .meus-estudos li {
+        padding-inline: 30px;
+    }
+
+    .meus-estudos li img {
+        width: 4em;
+    }
+
+    .p-titulo-principal {
+        font-size: 25px;
+        padding-top: 35px;
+    }
+
+    .onde-estudo img {
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .meu-perfil-div {
+        background-color: white;
+        height: 600px;
+    }
+
+    .meu-perfil-titulo {
+        text-align: center;
+        font-size: 53px;
+        padding-top: 30px;
+    }
+
+    .perfil-desc {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+
+    .onde-estudo {
+        padding-top: 70px;
+        height: 830px;
+    }
+
+    .onde-estudo-btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .onde-estudo-btn input {
+        margin: 0 auto;
+        background: #00296B;
+        color: white;
+    }
+
+    .meus-projetos {
+        background: url(Imagens/Projetos-responsive-bg.png);
+        background-repeat: no-repeat;
+    }
+
+    .titulo-meus-projetos {
+        padding-top: 2.5em;
+        font-size: 50px;
+    }
+
+    .meus-projetos-desc {
+        font-size: 22px;
+        padding-top: 1.5em;
+    }
+
+    .projetos-type img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 90%;
+    }
+
+    .projetos-type h2 {
+        font-size: 50px;
+    }
+
+    .projetos-type p {
+        font-size: 22px;
+        width: 80%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projeto-btn {
+        margin: auto;
+        margin-top: 49px;
+        width: 80%;
+        background: #FFD500;
+        color: #00296B;
+    }
+   
+}
